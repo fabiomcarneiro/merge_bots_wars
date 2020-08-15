@@ -2,14 +2,14 @@
 
 
 fn() {
-local x=2
+local x=1
 while [ $x -le 20 ]
 do
-  git checkout -b pessego/$x && \
-  echo $x > pessego$x && \
+  git checkout -b klaxy/$x && \
+  echo $x > klaxy$x && \
   git add -A . && \
-  git commit -m another && \
-  git push origin pessego/$x && \
+  git commit -m 'fix: another' && \
+  git push origin klaxy/$x && \
   git checkout master
   (( x++ ))
 done
