@@ -2,7 +2,7 @@
 
 
 fn() {
-local x=1
+local x=2
 while [ $x -le 20 ]
 do
   git checkout -b pessego/$x && \
