@@ -2,8 +2,8 @@
 
 
 fn() {
-local x=1
-while [ $x -le 1 ]
+local x=2
+while [ $x -le 20 ]
 do
   git checkout -b melon/$x && \
   echo $x > melon$x && \
