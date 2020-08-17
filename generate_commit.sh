@@ -3,7 +3,7 @@
 
 fn() {
 local x=1
-while [ $x -le 1 ]
+while [ $x -le 20 ]
 do
   git checkout -b joe/$x && \
   echo $x > joe$x && \
