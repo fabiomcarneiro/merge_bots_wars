@@ -5,11 +5,11 @@ fn() {
 local x=1
 while [ $x -le 20 ]
 do
-  git checkout -b joe/$x && \
-  echo $x > joe$x && \
+  git checkout -b alphabet/$x && \
+  echo $x > alphabet$x && \
   git add -A . && \
   git commit -m another && \
-  git push origin joe/$x && \
+  git push origin alphabet/$x && \
   git checkout master
   (( x++ ))
 done
